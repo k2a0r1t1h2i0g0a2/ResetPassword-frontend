@@ -17,10 +17,10 @@ const ResetPassword = () => {
     e.preventDefault();
 
     try {
-      const response = await axiosInstance.post(
-        `/user/reset-password/${token}`,
+      const response = await fetch(
+        `https://resetpassword-e9hb.onrender.com/user/reset-password/${token}`,
         {
-          newPassword: password, 
+          newPassword: password,
         }
       );
 console.log("newPassword",password);

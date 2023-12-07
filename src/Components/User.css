@@ -14,9 +14,11 @@ width: 500px;
 height: 300px;
 border-radius: 20px;
  box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
- display: flex;
- justify-content: space-around;
-margin-left: 50px;
+display: flex;
+justify-content: center;
+margin-left: 400px;
+margin-top: 100px;
+padding-top: 30px;
 }
 .success{
    background-color: green;
@@ -48,9 +50,10 @@ margin-left: 50px;
     border-radius: 20px;
     box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
     display: flex;
-    justify-content: space-around;
-    margin-left: 50px;
-    padding-top: 20px;
+        justify-content: center;
+        margin-left: 400px;
+        margin-top: 100px;
+        padding-top: 30px;
 }
 #forgotEmail {
     margin-top: 20px;
@@ -63,9 +66,10 @@ background-color: rgb(10, 253, 253);
     border-radius: 20px;
     box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
     display: flex;
-    justify-content: space-around;
-    margin-left: 50px;
-    padding-top: 20px;
+        justify-content: center;
+        margin-left: 400px;
+        margin-top: 100px;
+        padding-top: 30px;
 }
 
 .success-message{
@@ -77,4 +81,30 @@ background-color: rgb(10, 253, 253);
 }
 #resetPassword{
     margin-top: 32px;
+}
+
+@media (max-width: 910px) {
+    .registerpage {
+        width: 100%;
+      
+        margin-left: 0;
+       
+    }
+}
+@media (max-width: 910px) {
+    .resetpage{
+        width: 100%;
+
+        margin-left: 0;
+
+    }
+}
+
+@media (max-width: 910px) {
+    .forgotpage {
+        width: 100%;
+
+        margin-left: 0;
+
+    }
 }
