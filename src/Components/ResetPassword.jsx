@@ -20,7 +20,13 @@ const ResetPassword = () => {
       const response = await fetch(
         `https://resetpassword-e9hb.onrender.com/user/reset-password/${token}`,
         {
-          newPassword: password,
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            newPassword: password,
+          }),
         }
       );
 console.log("newPassword",password);
