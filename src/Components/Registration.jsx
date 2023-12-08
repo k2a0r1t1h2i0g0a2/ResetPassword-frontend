@@ -44,7 +44,9 @@ const Registration = () => {
       <Container>
         <Row>
           <Col>
-            <h1>User Registration</h1>
+            
+              <h1>User Registration</h1>
+            <br />
           </Col>
           <form onSubmit={handleSubmit}>
             {" "}
@@ -87,7 +89,6 @@ const Registration = () => {
             {" "}
             <p className="success-message">{message}</p>{" "}
           </Col>
-          
         </Row>
       </Container>
     </div>
