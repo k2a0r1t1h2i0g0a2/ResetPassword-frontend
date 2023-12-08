@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axiosInstance from "../axios.Config.js";
+// import axiosInstance from "../axios.Config.js";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -12,9 +12,12 @@ const ForgotPassword = () => {
     e.preventDefault();
  const email = e.target.email.value;
     try {
-      const response = await axiosInstance.post("/user/forgot-password", {
-        email,
-      });
+      const response = await fethch(
+        "https://resetpassword-e9hb.onrender.com/user/forgot-password",
+        {
+          email,
+        }
+      );
 
          if (response && response.status === 200) {
        

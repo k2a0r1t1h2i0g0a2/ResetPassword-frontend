@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import axiosInstance from "../axios.Config.js";
+// import axiosInstance from "../axios.Config.js";
 import "./User.css";
 
 
@@ -21,10 +21,13 @@ const Registration = () => {
       console.log("Password:", password);
 
     try {
-      const response = await axiosInstance.post("/user/register", {
-        email,
-        password,
-      });
+      const response = await fetch(
+        "https://resetpassword-e9hb.onrender.com/user/register",
+        {
+          email,
+          password,
+        }
+      );
 
       if (response.status === 201) {
        setMessage("User registered successfully")
